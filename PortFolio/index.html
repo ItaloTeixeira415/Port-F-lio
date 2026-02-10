@@ -10,12 +10,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
       html {
         scroll-behavior: smooth;
       }
     </style>
   </head>
+
   <body class="bg-black text-white font-sans">
 
     <!-- Navbar -->
@@ -24,7 +26,7 @@
         <a href="#home" class="hover:text-purple-400">Home</a>
         <a href="#about" class="hover:text-purple-400">About</a>
         <a href="#resume" class="hover:text-purple-400">Competências</a>
-        <a href="#portfolio" class="hover:text-purple-400">Projetos</a>
+        <a href="#portfolio" class="hover:text-purple-400">Projetos e Premiações</a>
       </nav>
       <div class="flex space-x-4 text-3xl text-gray-300">
         <a href="https://www.linkedin.com/in/italo-teixeira-231536309/" target="_blank" class="hover:text-purple-400"><i class="fab fa-linkedin"></i></a>
@@ -39,14 +41,12 @@
       <div class="relative z-10">
         <h1 class="text-white text-2xl md:text-3xl">ITALO</h1>
         <h2 class="text-white text-5xl md:text-6xl font-bold">TEIXEIRA</h2>
-        <h3 class="text-white text-xl md:text-2xl mt-2 font-semibold">Desenvolvedor FullStack</h3>
-        <p class="text-white text-sm md:text-base mt-2 typewriter">aspiring software engineer.</p>
-        <div class="mt-6 flex space-x-4 justify-center">
-        </div>
+        <h3 class="text-white text-xl md:text-2xl mt-2 font-semibold">Desenvolvedor</h3>
+        <p class="text-white text-sm md:text-base mt-2">aspiring software engineer.</p>
       </div>
     </section>
 
-   <!-- About Section (visual escuro elegante com foco na imagem de fundo) -->
+    <!-- About Section (visual escuro elegante com foco na imagem de fundo) -->
 <section id="about" 
   class="min-h-screen flex items-center justify-center bg-[#1a1a1a] text-[#e0e0e0] px-6 md:px-24 py-20 relative bg-cover bg-center" 
   style="background-image: url('assets/fundo-about.jpg');">
@@ -67,7 +67,7 @@
       </p>
       <ul class="space-y-2 text-base text-gray-300">
         <li>🛠️ Aprendendo <span class="text-white font-medium">C#</span> e aprofundando meus conhecimentos em <span class="text-white font-medium">modularização</span> e <span class="text-white font-medium">SQL</span>.</li>
-        <li>📚 Estudando modelagem de processos com o <span class="text-white font-medium">BIZAGI</span>.</li>
+        <li>📚 Estudando Engenharia de Requisitos de Software.</li>
       </ul>
       <p class="mt-6 text-pink-400 font-semibold">📍 Belo Horizonte, Brazil</p>
     </div>
@@ -81,8 +81,7 @@
 </section>
 
 
-    <!-- Placeholder para Resume e Portfolio -->
-   <!-- Competências -->
+    <!-- Competências -->
 <section id="resume" 
   class="min-h-screen bg-black text-white py-20 px-4 md:px-20 relative bg-cover bg-center"
   style="background-image: url('assets/fundo-about.jpg');">
@@ -119,12 +118,6 @@
       <h3 class="text-xl font-semibold mt-10 mb-4">LANGUAGES</h3>
       <div class="space-y-4">
         <div>
-          <p>Português</p>
-          <div class="w-full bg-gray-800 h-2 rounded">
-            <div class="bg-purple-500 h-2 rounded w-full"></div>
-          </div>
-        </div>
-        <div>
           <p>Inglês</p>
           <div class="w-full bg-gray-800 h-2 rounded">
             <div class="bg-purple-500 h-2 rounded w-3/5"></div>
@@ -133,19 +126,24 @@
       </div>
 
       <h3 class="text-xl font-semibold mt-10 mb-4">SOFT SKILLS</h3>
-      <p class="text-sm text-gray-400">Criatividade - Comunicação - Proatividade - Trabalho em equipe- Organização - Metodologia Ágil - SCRUM</p>
+      <p class="text-sm text-gray-400">
+        Criatividade - Comunicação - Proatividade - Trabalho em equipe - Organização - Metodologia Ágil - SCRUM
+      </p>
     </div>
 
     <!-- Coluna 2: Experiência & Educação -->
     <div>
       <h3 class="text-xl font-semibold mb-4">PROJETOS ACADÊMICOS</h3>
       <ul class="text-sm text-gray-300 space-y-4">
-        <li><strong>TRANSPUC</strong><br /> 2024 - 2025</li>
-        <li><strong>CANTU</strong><br />2025 - ATUALMENTE</li>
+        <li><strong>CANTU</strong><br />2025 - 2026</li>
+        <li><strong>PUC Comp - Empresa Júnior de Tecnologia</strong><br />2026 - Atualmente</li>
       </ul>
 
       <h3 class="text-xl font-semibold mt-10 mb-4">EDUCAÇÃO</h3>
-      <p class="text-sm text-gray-300">PUC Minas – Análise e Desenvolvimento de Sistemas<br /><span class="text-purple-400">2024 - ATUALMENTE</span></p>
+      <p class="text-sm text-gray-300">
+        PUC Minas – Análise e Desenvolvimento de Sistemas<br />
+        <span class="text-purple-400">2024 - ATUALMENTE</span>
+      </p>
     </div>
 
     <!-- Coluna 3: O que posso fazer -->
@@ -168,7 +166,8 @@
   </div>
 </section>
 
-<section id="portfolio" 
+
+    <section id="portfolio" 
   class="min-h-screen bg-cover bg-center relative px-6 py-20 text-white" 
   style="background-image: url('assets/fundo-about.jpg');">
 
@@ -183,23 +182,69 @@
     
     <!-- Projeto 1 -->
     <div class="bg-white bg-opacity-10 rounded-2xl shadow-lg p-6 backdrop-blur-md">
-      <img src="assets/bg.jpg" alt="Imagem do Projeto" class="rounded-xl mb-4 w-full h-60 object-cover" />
+      <img src="assets/bg.jpg"
+           alt="Imagem do Projeto"
+           onclick="openModal(this.src)"
+           class="rounded-xl mb-4 w-full h-60 object-cover cursor-pointer hover:opacity-80 transition" />
       <h3 class="text-xl font-bold mb-2 text-white">Portfólio</h3>
       <p class="text-gray-200 mb-4">
         Este portfólio foi criado com o intuito de mostrar meus projetos, evidenciar minhas competências técnicas e oferecer uma experiência de navegação prática, dinâmica e atrativa para recrutadores e demais visitantes.
       </p>
-      </a>
     </div>
 
     <!-- Projeto 2 -->
     <div class="bg-white bg-opacity-10 rounded-2xl shadow-lg p-6 backdrop-blur-md">
-      <img src="assets/cantu2.png" alt="Imagem do Projeto" class="rounded-xl mb-4 w-full h-60 object-cover" />
+      <img src="assets/cantu2.png"
+           alt="Imagem do Projeto"
+           onclick="openModal(this.src)"
+           class="rounded-xl mb-4 w-full h-60 object-cover cursor-pointer hover:opacity-80 transition" />
       <h3 class="text-xl font-bold mb-2 text-white">Cantu</h3>
       <p class="text-gray-200 mb-4">
         Projeto acadêmico para facilitar a organização de Moradias estudantis, promovendo a colaboração, interação e economia na moradia.
       </p>
-      </a>
+    </div>
+
+    <!-- Projeto 3 -->
+    <div class="bg-white bg-opacity-10 rounded-2xl shadow-lg p-6 backdrop-blur-md">
+      <img src="assets/CertificadoCantu.png"
+           alt="Imagem do Projeto"
+           onclick="openModal(this.src)"
+           class="rounded-xl mb-4 w-full h-60 object-cover cursor-pointer hover:opacity-80 transition" />
+      <h3 class="text-xl font-bold mb-2 text-white">Condecoração Acadêmica</h3>
+      <p class="text-gray-200 mb-4">
+        Por consequência do bom resultado que o TI 2 apresentou no final, meu grupo recebeu o Prêmio de melhor trabalho interdisciplinar do segundo semestre de 2025 do curso de Análise e Desenvolvimento de Sistemas, agregando bastante no meu currículo profissional.
+      </p>
     </div>
 
   </div>
 </section>
+
+
+    <!-- MODAL TELA CHEIA -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-50">
+      <span onclick="closeModal()" class="absolute top-6 right-8 text-white text-4xl cursor-pointer hover:text-purple-400">&times;</span>
+      <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
+    </div>
+
+    <script>
+      function openModal(src) {
+        const modal = document.getElementById("imageModal");
+        const img = document.getElementById("modalImage");
+        img.src = src;
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+
+      document.getElementById("imageModal").addEventListener("click", function(e) {
+        if (e.target.id === "imageModal") closeModal();
+      });
+    </script>
+
+  </body>
+</html>
